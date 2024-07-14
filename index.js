@@ -59,8 +59,4 @@ app.use('/graphql' , authenticateJWT , createHandler({
 app.post('/login',login);
 
 app.post('/register',register);
-app.get('/hello',(req,res)=>{
-    res.send({
-        message:'Hello World'
-    });
-})
+
